@@ -1,12 +1,14 @@
 # Ubuntu
-sudo apt install htop iotop ncdu mc net-tools curl neofetch
+```
+sudo apt install htop iotop ncdu mc net-tools curl neofetch sshfs
+```
 
 # Debian
 ```
 sudo apt install libfuse2
 ```
 ```
-sudo apt install vlc gdebi
+sudo apt install vlc gdebi sshfs
 ```
 ```
 sudo apt install yaru-theme-*
