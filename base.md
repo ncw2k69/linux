@@ -1,6 +1,6 @@
 # Base
 ```
-sudo apt install htop iotop ncdu mc net-tools curl neofetch sshfs lm-sensors 
+sudo apt install htop iotop ncdu mc net-tools curl neofetch sshfs lm-sensors lshw 
 ```
 # Ubuntu
 ```
