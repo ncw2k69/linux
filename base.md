@@ -2,6 +2,11 @@
 ```
 sudo apt install htop iotop ncdu mc net-tools curl neofetch sshfs lm-sensors lshw 
 ```
+# Ubuntu - Remove Pro
+```
+sudo apt remove --purge ubuntu-advantage-desktop-daemon ubuntu-pro-*
+```
+
 # Ubuntu
 ```
 sudo apt install htop iotop ncdu mc net-tools curl neofetch sshfs
