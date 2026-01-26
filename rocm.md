@@ -95,8 +95,26 @@ CUDA available: True
 Device: AMD Radeon 890M
 ```
 
+### Activate ROCm on already installed Projects
+Even if says that some packages are not compatible with new version of `torch`, do upgrade and check if project works or not (for me worked when testing ultralytics) 
+```
+pip install --upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/rocm7.1
+```
+
 ### Install Project Requirements 
 Now you can install the other packages that you need for your project
 - Command line: `pip install packA packB ...`
 - requirements file: `pip install -r requirements.txt`
+
+### Large Files - Low Disk space issue
+Use ENV variable `TMPDIR` to change the packages download location 
+```
+TMPDIR=~/PythonTemp/ pip3 install --upgrade torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/rocm7.1
+```
+
+### PIP Quick Cleanup
+```
+pip3 cache purge
+```
+
 
