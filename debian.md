@@ -11,3 +11,12 @@ export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 your-user-name-here     ALL=(ALL)       ALL
 ```
 - reboot
+
+# add me
+```
+nano /etc/sudoers.d/me
+```
+content
+```
+your-user-name-here     ALL=(ALL)       ALL
+```
