@@ -1,6 +1,6 @@
 # Base
 ```
-sudo apt install htop iotop ncdu mc net-tools curl neofetch ssh sshfs lm-sensors lshw 
+sudo apt install htop btop iotop ncdu mc net-tools curl ssh sshfs lm-sensors lshw sudo
 ```
 # Ubuntu - Remove Pro
 ```
