@@ -20,3 +20,12 @@ content
 ```
 your-user-name-here     ALL=(ALL)       ALL
 ```
+### test 
+- exit root
+```
+exit
+```
+- update
+```
+sudo apt update
+```
