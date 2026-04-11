@@ -20,6 +20,6 @@ Download `libuhd 4.9.0` and install from experimental repositories:
 Download the [sdrangel_7.23.2_ubuntu-24.04_amd64.deb](https://github.com/f4exb/sdrangel/releases/download/v7.23.2/sdrangel_7.23.2_ubuntu-24.04_amd64.deb), all other [Releases](https://github.com/f4exb/sdrangel/releases/)
 
 ### Install SDRAngel
-- Double Click on `sdrangel_7.23.2_ubuntu-24.04_amd64.deb` and select `gdigi` or any other tool
+- Double Click on `sdrangel_7.23.2_ubuntu-24.04_amd64.deb` and select `gdebi` or any other tool
 - Check if pointing out `missing dependecies` in red
 - Click `Install`
