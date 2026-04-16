@@ -31,6 +31,39 @@ sudo apt install htop btop iotop ncdu mc cbm net-tools ethtool curl ssh sshfs lm
 sudo apt install cec-utils libcec kodi-inputstream-adaptive kodi nginx
 ```
 
+## Start KODI on Boot
+### Create the Systemd Service
+Create a service file that waits for the network to be fully up.
+```bash
+sudo nano /etc/systemd/system/kodi.service
+```
+Add the following content:
+```ini
+[Unit]
+Description=Kodi Standalone
+After=systemd-user-sessions.service network.target network-online.target
+Wants=network-online.target
+
+[Service]
+User=root
+Group=root
+Type=simple
+# Wait for network to be truly online
+ExecStartPre=/bin/sh -c 'until ping -c1 google.com; do sleep 1; done'
+ExecStart=/usr/bin/kodi-standalone
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+```
+### Enable the Service
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable kodi.service
+```
+
+
 ## Fixing HALT on Power Off or Reboot
 There is an issue related to the HSUART DMA support in the kernel that will hang on reboot or shutdown. 
 Open `blacklist.conf`
@@ -96,4 +129,8 @@ show_cpu_temperature=1
 Optional - Copy same config to ROOT/SUDO 
 ```
 sudo cp -r ~/.config/htop/ /root/.config/
+```
+## Reboot
+```bash
+sudo reboot
 ```
