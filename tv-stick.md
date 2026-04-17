@@ -28,7 +28,7 @@ sudo apt install htop btop iotop ncdu mc cbm net-tools ethtool curl ssh sshfs lm
 
 ## Install Media KODI
 ```
-sudo apt install cec-utils libcec kodi-inputstream-adaptive kodi kodi-repository-kodi nginx
+sudo apt install cec-utils libcec kodi-inputstream-adaptive kodi kodi-repository-kodi kodi-pvr-hts kodi-pvr-iptvsimple nginx
 ```
 
 ## Start KODI on Boot
