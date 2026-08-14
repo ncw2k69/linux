@@ -8,10 +8,14 @@ The SUID sandbox helper binary was found, but is not configured correctly. Rathe
 
 
 For deactivate restrictions
-```
+```bash
 sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
 ```
 For activate restrictions
-```
+```bash
 sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=1
+```
+FUSE
+```bash
+sudo apt install libfuse2t64
 ```
