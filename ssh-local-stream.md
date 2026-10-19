@@ -1,7 +1,7 @@
 # Stream over SSH
 
 ## VLC
-Open `/etc/ssh/sshd_config `
+Open `sudo nano /etc/ssh/sshd_config `
 
 Add at the end of the config file:
 ```
